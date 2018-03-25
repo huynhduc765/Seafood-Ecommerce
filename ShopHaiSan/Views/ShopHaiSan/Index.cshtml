@@ -1,0 +1,88 @@
+﻿@model IEnumerable<ShopHaiSan.MENU>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TenMenu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LinkMenu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CapMenu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ThuTuMenu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LoaiMenu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaMenuCha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LinkMenuCha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TrangThai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgayTao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NgaySua)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenMenu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinkMenu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CapMenu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ThuTuMenu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LoaiMenu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaMenuCha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinkMenuCha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TrangThai)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgayTao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NgaySua)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MaMenu }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MaMenu }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MaMenu })
+        </td>
+    </tr>
+}
+
+</table>

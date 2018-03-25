@@ -35,13 +35,7 @@
                     <div class="clearfix"> </div>
                 </div>
                 <div class="header-bottom-right">
-                    <div class="account"><a href="login.html"><span> </span>YOUR ACCOUNT</a></div>
-                    <ul class="login">
-                        <li><a href="login.html"><span> </span>LOGIN</a></li> |
-                        <li><a href="register.html">SIGNUP</a></li>
-                    </ul>
-                    <div class="cart"><a href="#"><span> </span>CART</a></div>
-                    <div class="clearfix"> </div>
+                    @{Html.RenderAction("getMenu", "Default");}
                 </div>
                 <div class="clearfix"> </div>
             </div>
@@ -330,7 +324,9 @@
     <div class="sub-cate">
         <div class=" top-nav rsidebar span_1_of_left">
             <h3 class="cate">CATEGORIES</h3>
-            <ul class="menu">
+       
+          
+                <ul class="menu">
                 <li class="item1">
                     <a href="#">Curabitur sapien<img class="arrow-img" src="~/images/arrow1.png" alt="" /> </a>
                     <ul class="cute">
@@ -380,7 +376,7 @@
                     <li class="menu-kid-left"><a href="contact.html">Contact us</a></li>
                 </ul>
             </ul>
-        </div>
+            </div>
         <!--initiate accordion-->
         <script type="text/javascript">
                 $(function () {
