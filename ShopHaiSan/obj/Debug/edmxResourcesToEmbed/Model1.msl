@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ShopHaiSanOnlineModelStoreContainer" CdmEntityContainer="ShopHaiSanOnlineEntities">
+    <EntitySetMapping Name="MENUs">
+      <EntityTypeMapping TypeName="ShopHaiSanOnlineModel.MENU">
+        <MappingFragment StoreEntitySet="MENU">
+          <ScalarProperty Name="MaMenu" ColumnName="MaMenu" />
+          <ScalarProperty Name="TenMenu" ColumnName="TenMenu" />
+          <ScalarProperty Name="LinkMenu" ColumnName="LinkMenu" />
+          <ScalarProperty Name="CapMenu" ColumnName="CapMenu" />
+          <ScalarProperty Name="ThuTuMenu" ColumnName="ThuTuMenu" />
+          <ScalarProperty Name="LoaiMenu" ColumnName="LoaiMenu" />
+          <ScalarProperty Name="MaMenuCha" ColumnName="MaMenuCha" />
+          <ScalarProperty Name="LinkMenuCha" ColumnName="LinkMenuCha" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NgaySua" ColumnName="NgaySua" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

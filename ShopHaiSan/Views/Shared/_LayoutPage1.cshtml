@@ -32,15 +32,8 @@
                     </div>
                     <div class="clearfix"> </div>
                 </div>
-                <div class="header-bottom-right">
-                    <div class="account"><a href="login.html"><span> </span>YOUR ACCOUNT</a></div>
-                    <ul class="login">
-                        <li><a href="login.html"><span> </span>LOGIN</a></li> |
-                        <li><a href="register.html">SIGNUP</a></li>
-                    </ul>
-                    <div class="cart"><a href="#"><span> </span>CART</a></div>
-                    <div class="clearfix"> </div>
-                </div>
+               
+                @{Html.RenderAction("getMenu", "Default");}
                 <div class="clearfix"> </div>
             </div>
         </div>
@@ -135,13 +128,10 @@
         </div>
         <div class="clearfix"> </div>
 
-        
+
         <!---->
-       
-          
-    
         <!-- may o dau-->
-</div>
+    </div>
     <div class="footer">
         <div class="footer-top">
             <div class="container">

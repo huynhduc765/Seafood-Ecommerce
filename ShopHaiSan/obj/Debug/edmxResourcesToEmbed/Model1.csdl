@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShopHaiSanOnlineModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="MENU">
+    <Key>
+      <PropertyRef Name="MaMenu" />
+    </Key>
+    <Property Name="MaMenu" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="TenMenu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LinkMenu" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="CapMenu" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ThuTuMenu" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="LoaiMenu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaMenuCha" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="LinkMenuCha" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="TrangThai" Type="Boolean" />
+    <Property Name="NgayTao" Type="DateTime" Precision="3" />
+    <Property Name="NgaySua" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="ShopHaiSanOnlineEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MENUs" EntityType="Self.MENU" />
+  </EntityContainer>
+</Schema>
