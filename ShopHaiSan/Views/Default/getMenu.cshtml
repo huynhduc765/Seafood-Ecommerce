@@ -1,11 +1,13 @@
 ﻿
 @model IEnumerable<ShopHaiSan.MENU>
-<div class="header-bottom-right">
-    @foreach (var i in Model)
-    {
-        <div>
-            <a href="#">@i.TenMenu</a>
-        </div>
-        
-    }
-    </div>
+       <ul>
+           @foreach (var i in Model)
+           {
+
+               <li style="display:inline-block;padding-right:7px;text-decoration:none;font-size:15px"   >
+                   <strong> <a href="/Home/@i.LinkMenu">@i.TenMenu</a></strong>
+               </li>
+
+
+           }
+       </ul>

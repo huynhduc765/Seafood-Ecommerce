@@ -12,7 +12,10 @@ namespace ShopHaiSan.Controllers
         {
             return View();
         }
+        public ActionResult GioiThieu()
+        {
+            return View();
+        }
 
-     
     }
 }

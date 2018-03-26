@@ -8,6 +8,7 @@ body{
 	background: #fff;
 	font-family: 'Open Sans', sans-serif;
 }
+
 body a{
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
@@ -76,6 +77,12 @@ ul.support li a {
 	text-align: center;
 	padding-top:1.7em;
 }
+
+/*.listdanhsach{
+    list-style-type : none;
+    display: inline-block;
+    padding-right: 2px;
+}*/
 .account,.cart{
 	float:left;
 	width:40%;

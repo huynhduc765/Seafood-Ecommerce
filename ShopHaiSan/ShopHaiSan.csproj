@@ -231,6 +231,7 @@
     <Content Include="images\gpluse.png" />
     <Content Include="images\img-sprite.png" />
     <Content Include="images\label_new.png" />
+    <Content Include="images\Logo.jpg" />
     <Content Include="images\logo.png" />
     <Content Include="images\pi.jpg" />
     <Content Include="images\pi1.jpg" />
@@ -326,6 +327,7 @@
     <Content Include="Views\ShopHaiSan\Details.cshtml" />
     <Content Include="Views\ShopHaiSan\Edit.cshtml" />
     <Content Include="Views\ShopHaiSan\Index.cshtml" />
+    <Content Include="Views\Home\GioiThieu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
